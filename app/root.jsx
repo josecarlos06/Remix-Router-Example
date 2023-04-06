@@ -5,6 +5,7 @@ import {
   Outlet,
   Scripts
 } from "@remix-run/react";
+import style from '~/styles/app.css';
 
 // informacion meta
 export function meta(){
@@ -15,6 +16,14 @@ export function meta(){
          content : "width=device-width, initial-scale=1.0"
       },
       {title : "Example meta V2"}
+   ]
+}
+export function links(){
+   return[
+      {
+         rel : 'stylesheet',
+         href : style
+      }
    ]
 }
 

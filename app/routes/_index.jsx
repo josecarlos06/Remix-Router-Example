@@ -1,5 +1,11 @@
-export default function Index() {
+import Nav from "../components/nav"
+const Index = () => {
   return (
-      <h1>META V2</h1>
-  );
+    <>
+      <Nav/>
+      <h1>router, meta </h1>
+    </>
+  )
 }
+
+export default Index
